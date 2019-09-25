@@ -62,7 +62,7 @@ const listingsAndReviewsSchema = new Schema({
     'host_total_listings_count': Number,
     'host_verifications': Array
   },
-  'adress': {
+  'address': {
     'street': String,
     'suburb': String,
     'goverment_area': String,
