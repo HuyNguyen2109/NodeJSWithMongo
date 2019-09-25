@@ -1,0 +1,38 @@
+{
+  "applicationPort": "6000",
+  "baseURL": "/backend",
+  "dbConfig": {
+    "protocol": "mongodb+srv",
+    "username": "Admin",
+    "password": "Password",
+    "host": "testdatabase-qp7sm.mongodb.net",
+    "dbType": "test",
+    "option": "retryWrites=true&w=majority",
+    "dbName": "sample_airbnb",
+    "collectionName": "listingsAndReviews"
+  },
+  "dbTargetConfig": {
+    "dbName": "NodeJSWithMongo",
+    "collectionName": "MyCollections"
+  },
+  "logConfig": {
+    "appenders": {
+      "backend": {
+        "type": "console"
+      },
+      "backend-file": {
+        "type": "file",
+        "filename": "log/file.log"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "backend",
+          "backend-file"
+        ],
+        "level": "ALL"
+      }
+    }
+  }
+}
